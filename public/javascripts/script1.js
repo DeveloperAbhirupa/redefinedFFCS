@@ -10,6 +10,10 @@ $(document).ready(()=>{
     });
 });
 
+
+//LET US ASSUME THAT THE FACULTY LIST IS STORED IN 
+
+
 var venue="SJT 305";//Hardcoded data to be replaced by JSON
 var courseCode="CSE2001";//Hardcoded data to be replaced by JSON
 var courseTitle="Introduction To Python";//Hardcoded data to be replaced by JSON
