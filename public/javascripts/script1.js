@@ -11,18 +11,21 @@ $(document).ready(()=>{
 });
 
 
-//LET US ASSUME THAT THE FACULTY LIST IS STORED IN 
-
-
-var venue="SJT 305";//Hardcoded data to be replaced by JSON
-var courseCode="CSE2001";//Hardcoded data to be replaced by JSON
-var courseTitle="Introduction To Python";//Hardcoded data to be replaced by JSON
-var type="LAB";//Hardcoded data to be replaced by JSON
-var slot="L33+L36+L50+L51+L10+L11"; //Hardcoded data to be replaced by JSON
-var c=4; //Hardcoded data to be replaced by JSON
-var slotInit=slot; //Copying values
-var faculty="Dr. Rajkumar S";//Hardcoded data to be replaced by JSON
-var slotName=".";
+//LET US ASSUME THAT THE FACULTY LIST IS STORED IN A ARRAY  OF DICTIONARY IN javascript
+var counter=0;
+var dataJSON=[];
+dataJSON[counter]={"venue":"SJT 305", "courseCode":"CSE2001", "courseTitle":"Introduction To Python", "type"="LAB", "slot":"L33+L36+L50+L51+L10+L11", "c":"4", "faculty":"Dr. Rajkumar S"};
+slotInit =[];
+slotInit[counter]=dataJSON[counter]["slot"];
+// var venue="SJT 305";//Hardcoded data to be replaced by JSON
+// var courseCode="CSE2001";//Hardcoded data to be replaced by JSON
+// var courseTitle="Introduction To Python";//Hardcoded data to be replaced by JSON
+// var type="LAB";//Hardcoded data to be replaced by JSON
+// var slot="L33+L36+L50+L51+L10+L11"; //Hardcoded data to be replaced by JSON
+// var c=4; //Hardcoded data to be replaced by JSON
+// var slotInit=slot; //Copying values
+// var faculty="Dr. Rajkumar S";//Hardcoded data to be replaced by JSON
+// var slotName=".";
 
 addDataToList(slotInit, courseCode, courseTitle, venue, faculty, c);
 console.log(length);
